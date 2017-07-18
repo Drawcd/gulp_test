@@ -26,7 +26,7 @@ var sourcemaps = require('gulp-sourcemaps');
    livereload.listen();
    gulp.watch('*',['livereload']);  // local folder안에 모든 파일 대상으로 수정되었을때 livereload task를 실행해라
    gulp.watch('html_src/**',['include','livereload']);
-   gulp.watch('css_src(scss_src)/**',['sass','livereload']);
+   gulp.watch('css_src/**',['sass','livereload']);
  // gulp.watch('수정될폴더',['수정되었을때 실행될 task']);
  });
 
